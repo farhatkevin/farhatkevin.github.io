@@ -151,8 +151,13 @@ p {
 }
 
 /* About Section */
+.about {
+    text-align: center;
+}
 .about p {
     max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Work Section */
@@ -697,7 +702,11 @@ html {
     align-items: center;
 }
 
-.work-item h3::before { content: none; }
+.work-item h3::before {
+    content: none;
+    display: none;
+    margin: 0;
+}
 
 .work-item p {
     margin: 0;
