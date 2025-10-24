@@ -38,6 +38,7 @@ body {
     right: 0;
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     z-index: 1000;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -113,9 +114,10 @@ h1 {
 }
 
 .header-links .link-button {
-    flex: 0 0 auto;
+    flex: none;
     width: auto;
     min-width: auto;
+    max-width: none;
 }
 
 /* Sections */
@@ -285,6 +287,9 @@ p {
     text-decoration-color: var(--primary-color);
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
+    /* Fallback for older browsers */
+    border-bottom: 2px solid var(--primary-color);
+    text-decoration: none;
 }
 
 .publication-link {
@@ -646,7 +651,7 @@ html {
 
 .work-item {
     display: grid;
-    grid-template-columns: 140px 1fr;
+    grid-template-columns: 160px 1fr;
     gap: 1rem;
     padding: 0.5rem 0;
     background-color: transparent;
@@ -654,6 +659,24 @@ html {
     border-bottom: 1px solid var(--border);
     border-radius: 0;
     transition: color 0.2s ease, border-color 0.2s ease;
+    align-items: start;
+}
+
+/* Fallback for older browsers */
+@supports not (display: grid) {
+    .work-item {
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    .work-item h3 {
+        width: 160px;
+        flex-shrink: 0;
+    }
+    
+    .work-item p {
+        flex: 1;
+    }
 }
 
 .work-item:hover {
