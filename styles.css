@@ -6,21 +6,21 @@
 }
 
 :root {
-    /* Theme palette (pink) */
-    --ai2-pink: #ff3e8e;
+    /* Theme palette (purple) */
+    --ai2-pink: #6366f1;
     --primary-color: var(--ai2-pink);
     --text-primary: #111111;
     --text-secondary: #2b2b2b;
     --background: #ffffff;
     --surface: #f9fafb;
     --border: #e5e7eb;
-    --hover-bg: #fff0f6;
+    --hover-bg: #eef2ff;
     --accent-hover: var(--ai2-pink);
     --gradient-start: var(--ai2-pink);
     --gradient-end: var(--ai2-pink);
-    --hl-1: rgba(255, 62, 142, 0.14);
-    --hl-2: rgba(255, 62, 142, 0.14);
-    --hl-strong: rgba(255, 62, 142, 0.22);
+    --hl-1: rgba(99, 102, 241, 0.14);
+    --hl-2: rgba(168, 85, 247, 0.14);
+    --hl-strong: rgba(99, 102, 241, 0.22);
 }
 
 body {
@@ -346,9 +346,9 @@ p {
 }
 
 .badge.spotlight {
-    background: rgba(255, 62, 142, 0.12);
+    background: rgba(99, 102, 241, 0.12);
     color: var(--ai2-pink);
-    border: 1px solid rgba(255, 62, 142, 0.3);
+    border: 1px solid rgba(99, 102, 241, 0.3);
 }
 
 /* Footer */
@@ -452,7 +452,7 @@ html {
 
 /* Selection Color */
 ::selection {
-    background-color: rgba(59, 130, 246, 0.2);
+    background-color: rgba(99, 102, 241, 0.2);
     color: var(--text-primary);
 }
 
@@ -974,8 +974,8 @@ section:target, .project-section:target {
 }
 @keyframes targetFlash {
     0% {
-        background-color: rgba(255, 62, 142, 0.08);
-        box-shadow: 0 0 0 2px rgba(255, 62, 142, 0.25) inset;
+        background-color: rgba(99, 102, 241, 0.08);
+        box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.25) inset;
     }
     100% {
         background-color: transparent;
