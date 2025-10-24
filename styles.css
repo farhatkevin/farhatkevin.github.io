@@ -6,20 +6,21 @@
 }
 
 :root {
-    /* Indigo/Violet palette */
-    --primary-color: #6366f1;
-    --text-primary: #000000;
-    --text-secondary: #000000;
+    /* Theme palette (pink) */
+    --ai2-pink: #ff3e8e;
+    --primary-color: var(--ai2-pink);
+    --text-primary: #111111;
+    --text-secondary: #2b2b2b;
     --background: #ffffff;
     --surface: #f9fafb;
     --border: #e5e7eb;
-    --hover-bg: #f3f4f6;
-    --accent-hover: #7c3aed;
-    --gradient-start: #6366f1;
-    --gradient-end: #a855f7;
-    --hl-1: rgba(99, 102, 241, 0.14);
-    --hl-2: rgba(168, 85, 247, 0.14);
-    --hl-strong: rgba(99, 102, 241, 0.22);
+    --hover-bg: #fff0f6;
+    --accent-hover: var(--ai2-pink);
+    --gradient-start: var(--ai2-pink);
+    --gradient-end: var(--ai2-pink);
+    --hl-1: rgba(255, 62, 142, 0.14);
+    --hl-2: rgba(255, 62, 142, 0.14);
+    --hl-strong: rgba(255, 62, 142, 0.22);
 }
 
 body {
@@ -96,6 +97,9 @@ h1 {
     color: var(--text-secondary);
     font-weight: 400;
     line-height: 1.5;
+    max-width: 42ch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .location {
@@ -315,6 +319,21 @@ p {
     color: var(--accent-hover);
 }
 
+/* Ai2 link (pink underline + subtle pink highlight) */
+.ai2-link {
+    color: var(--ai2-pink);
+    text-decoration: none;
+    background-image: linear-gradient(var(--ai2-pink), var(--ai2-pink));
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: color 0.2s ease;
+}
+
+.ai2-link:hover {
+    color: var(--ai2-pink);
+}
+
 /* Publication badges */
 .badge {
     display: inline-block;
@@ -328,9 +347,9 @@ p {
 }
 
 .badge.spotlight {
-    background: rgba(99, 102, 241, 0.12);
-    color: #6366f1;
-    border: 1px solid rgba(99, 102, 241, 0.3);
+    background: rgba(255, 62, 142, 0.12);
+    color: var(--ai2-pink);
+    border: 1px solid rgba(255, 62, 142, 0.3);
 }
 
 /* Footer */
@@ -881,7 +900,7 @@ h1 {
 /* Subtle gradient stripe under header and ensure stacking */
 header { position: relative; }
 header::after {
-    content: "";
+    content: none;
     position: absolute;
     left: 0; right: 0; bottom: -1px; height: 3px;
     background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
@@ -941,8 +960,8 @@ body::before {
 /* Dark mode gradient tuning and texture */
 @media (prefers-color-scheme: dark) {
     :root {
-        --gradient-start: #818cf8; /* indigo-300/400 */
-        --gradient-end: #a78bfa;   /* violet-300/400 */
+        --gradient-start: var(--ai2-pink);
+        --gradient-end: var(--ai2-pink);
     }
     body::before {
         background-image: radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
@@ -955,8 +974,8 @@ section:target, .project-section:target {
 }
 @keyframes targetFlash {
     0% {
-        background-color: rgba(99, 102, 241, 0.08);
-        box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.25) inset;
+        background-color: rgba(255, 62, 142, 0.08);
+        box-shadow: 0 0 0 2px rgba(255, 62, 142, 0.25) inset;
     }
     100% {
         background-color: transparent;
