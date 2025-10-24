@@ -8,8 +8,8 @@
 :root {
     /* Indigo/Violet palette */
     --primary-color: #6366f1;
-    --text-primary: #1f2937;
-    --text-secondary: #6b7280;
+    --text-primary: #000000;
+    --text-secondary: #000000;
     --background: #ffffff;
     --surface: #f9fafb;
     --border: #e5e7eb;
@@ -697,15 +697,7 @@ html {
     align-items: center;
 }
 
-.work-item h3::before {
-    content: "";
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--primary-color);
-    display: inline-block;
-    margin-right: 8px;
-}
+.work-item h3::before { content: none; }
 
 .work-item p {
     margin: 0;
