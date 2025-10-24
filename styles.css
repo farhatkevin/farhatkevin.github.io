@@ -112,6 +112,12 @@ h1 {
     margin-top: 2rem;
 }
 
+.header-links .link-button {
+    flex: 0 0 auto;
+    width: auto;
+    min-width: auto;
+}
+
 /* Sections */
 section {
     margin-bottom: 4rem;
