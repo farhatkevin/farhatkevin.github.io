@@ -538,3 +538,19 @@ footer {
       padding: 0.75rem;
     }
   }
+
+  /* ==========================================
+     Emoji utilities
+     ========================================== */
+  .emoji {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: -0.15em;
+    object-fit: contain;
+  }
+  .emoji.rounded { border-radius: 3px; }
+  .emoji.sm { width: 0.9em; height: 0.9em; }
+  .emoji.lg { width: 1.25em; height: 1.25em; }
+  .emoji.x2 { width: 2em; height: 2em; }
+  .emoji.x3 { width: 3em; height: 3em; vertical-align: -1em; }
