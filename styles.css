@@ -86,6 +86,19 @@ header {
     scroll-margin-top: 80px;
 }
 
+/* Profile photo */
+.profile-photo {
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: block;
+    margin: 0 auto 1rem auto;
+    background: var(--surface);
+}
+
 h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -1016,4 +1029,16 @@ section:target, .project-section:target {
     box-decoration-break: clone;
     border-radius: 2px;
     padding: 0 .05em;
+}
+
+/* Work summary paragraph with highlighted and underlined topics */
+.work-summary {
+    margin-top: 1rem;
+}
+
+.topic {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
 }
