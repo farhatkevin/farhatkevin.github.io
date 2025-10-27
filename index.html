@@ -14,6 +14,16 @@
             <a href="#work" class="nav-link">Work</a>
             <a href="#publications" class="nav-link">Publications</a>
             <a href="#contact" class="nav-link">Contact</a>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <!-- Sun icon -->
+                <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.8 1.42-1.42zm10.48 14.32l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM12 5a1 1 0 001-1V2h-2v2a1 1 0 001 1zm0 14a1 1 0 00-1 1v2h2v-2a1 1 0 00-1-1zM5 11H3v2h2v-2zm16 0h-2v2h2v-2zM6.76 19.16l-1.42 1.42-1.79-1.8 1.41-1.41 1.8 1.79zM20.45 4.46l-1.41-1.41-1.79 1.8 1.4 1.4 1.8-1.79zM12 7a5 5 0 100 10 5 5 0 000-10z"/>
+                </svg>
+                <!-- Moon icon -->
+                <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+                </svg>
+            </button>
         </div>
     </nav>
 
@@ -63,26 +73,26 @@
                 </p>
               
                 <p>
-                  I helped develop <strong>FlexOLMo</strong> on the <strong>OLMo</strong> team, and now apply it in federated learning setups to train on
-                  <strong>privacy-sensitive cancer data</strong> across institutions as part of the
-                  <strong>Cancer AI Alliance (CAIA)</strong>.
+                  I helped develop <strong class="brand-ai2">FlexOLMo</strong> on the <strong class="brand-ai2">OLMo</strong> team, and now apply it in federated learning setups to train on
+                  <strong class="brand-ai2">privacy-sensitive cancer data</strong> across institutions as part of the
+                  <strong class="brand-ai2">Cancer AI Alliance (CAIA)</strong>.
                 </p>
               
                 <p>
-                  Previously, I worked at <strong>TrueMedia</strong> with <strong>Oren Etzioni</strong>, developing
-                  <strong>deepfake detection systems</strong> to safeguard the <strong>2024 U.S. election</strong>.
+                  Previously, I worked at <strong class="brand-truemedia">TrueMedia</strong> with <strong class="brand-truemedia">Oren Etzioni</strong>, developing
+                  <strong class="brand-truemedia">deepfake detection systems</strong> to safeguard the <strong class="brand-truemedia">2024 U.S. election</strong>.
                 </p>
               
                 <p>
-                  I earned my <strong>BS/MS in Computer Science</strong> at the <strong>University of Washington</strong>,
-                  where I worked with <strong>Akari Asai</strong> in <strong>H2Lab</strong> under <strong>Hannaneh Hajishirzi</strong>.
+                  I earned my <strong class="brand-uw">BS/MS in Computer Science</strong> at the <strong class="brand-uw">University of Washington</strong>,
+                  where I worked with <strong class="brand-uw">Akari Asai</strong> in the <strong class="brand-uw">H2Lab</strong> under <strong class="brand-uw">Hannaneh Hajishirzi</strong>.
                 </p>
               
                 <p class="focus">
                   Current focus:
-                  <span class="topic hl">Distributed LLM architectures</span>,
-                  <span class="topic hl">Privacy-preserving training</span>,
-                  <span class="topic hl">Cancer + health AI</span>.
+                  <span class="topic hl">Distributed LLM architectures</span>
+                  <span class="topic hl">Privacy-preserving training</span>
+                  <span class="topic hl">Cancer + health AI</span>
                 </p>
               </section>
 
@@ -116,5 +126,33 @@
             <p>&copy; 2025 Kevin Farhat.</p>
         </footer>
     </div>
+    <script>
+    (function() {
+      var root = document.documentElement;
+      var toggle = document.getElementById('theme-toggle');
+      var stored = localStorage.getItem('theme');
+      if (stored === 'dark') {
+        root.setAttribute('data-theme', 'dark');
+      } else if (stored === 'light') {
+        root.removeAttribute('data-theme');
+      }
+      function applyIcon() {
+        var isDark = root.getAttribute('data-theme') === 'dark';
+        toggle.classList.toggle('is-dark', isDark);
+      }
+      applyIcon();
+      toggle.addEventListener('click', function() {
+        var isDark = root.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          root.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'light');
+        } else {
+          root.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        }
+        applyIcon();
+      });
+    })();
+    </script>
 </body>
 </html>
