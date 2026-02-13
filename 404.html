@@ -3,18 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page not found</title>
+    <title>Page Not Found - Kevin Farhat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
+    <style>
+        .error-page {
+            min-height: calc(100vh - var(--nav-height));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--space-xl);
+        }
+        
+        .error-content {
+            max-width: 28rem;
+        }
+        
+        .error-code {
+            font-family: var(--font-serif);
+            font-size: clamp(4rem, 15vw, 8rem);
+            font-weight: 600;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: var(--space-md);
+            opacity: 0.8;
+        }
+        
+        .error-title {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: var(--space-md);
+        }
+        
+        .error-message {
+            color: var(--text-secondary);
+            margin-bottom: var(--space-xl);
+        }
+        
+        .home-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: var(--space-sm) var(--space-lg);
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all var(--transition-base);
+        }
+        
+        .home-link:hover {
+            background: var(--bg-elevated);
+            border-color: var(--accent-border);
+            color: var(--accent);
+        }
+        
+        .home-link svg {
+            width: 18px;
+            height: 18px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>404</h1>
-            <p class="subtitle">Sorry, that page doesn’t exist.</p>
-        </header>
-        <main>
-            <p><a class="publication-link" href="/">Return home →</a></p>
-        </main>
-    </div>
+    <nav class="nav" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="/" class="nav-link">Home</a>
+        </div>
+    </nav>
+    
+    <main class="error-page">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Page Not Found</h1>
+            <p class="error-message">The page you're looking for doesn't exist or has been moved.</p>
+            <a href="/" class="home-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                <span>Back to Home</span>
+            </a>
+        </div>
+    </main>
 </body>
 </html>
