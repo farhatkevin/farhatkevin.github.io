@@ -6,16 +6,44 @@
     <title>Page Not Found - Kevin Farhat</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg: #eff1f5;
+            --line: #ccd0da;
+            --text: #4c4f69;
+            --muted: #6c6f85;
+            --brand: #1e66f5;
+        }
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+        .nav {
+            border-bottom: 1px solid var(--line);
+            padding: 1rem;
+        }
+        .nav-container {
+            width: min(1050px, calc(100% - 2rem));
+            margin: 0 auto;
+        }
+        .nav-link {
+            color: var(--muted);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .nav-link:hover {
+            color: var(--brand);
+        }
         .error-page {
-            min-height: calc(100vh - var(--nav-height));
+            min-height: calc(100vh - 58px);
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: var(--space-xl);
+            padding: 2rem;
         }
         
         .error-content {
@@ -23,46 +51,45 @@
         }
         
         .error-code {
-            font-family: var(--font-serif);
+            font-family: "Space Grotesk", Inter, sans-serif;
             font-size: clamp(4rem, 15vw, 8rem);
             font-weight: 600;
-            color: var(--accent);
+            color: var(--brand);
             line-height: 1;
-            margin-bottom: var(--space-md);
+            margin-bottom: 0.75rem;
             opacity: 0.8;
         }
         
         .error-title {
-            font-family: var(--font-serif);
+            font-family: "Space Grotesk", Inter, sans-serif;
             font-size: 1.5rem;
             font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: var(--space-md);
+            color: var(--text);
+            margin-bottom: 0.75rem;
         }
         
         .error-message {
-            color: var(--text-secondary);
-            margin-bottom: var(--space-xl);
+            color: var(--muted);
+            margin-bottom: 1.5rem;
         }
         
         .home-link {
             display: inline-flex;
             align-items: center;
-            gap: var(--space-sm);
-            padding: var(--space-sm) var(--space-lg);
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
+            gap: 0.5rem;
+            padding: 0.5rem 0.9rem;
+            background: transparent;
+            border: 1px solid var(--line);
             border-radius: 0.5rem;
-            color: var(--text-primary);
+            color: var(--text);
             text-decoration: none;
-            font-weight: 500;
-            transition: all var(--transition-base);
+            font-weight: 600;
+            transition: all 150ms ease;
         }
         
         .home-link:hover {
-            background: var(--bg-elevated);
-            border-color: var(--accent-border);
-            color: var(--accent);
+            border-color: var(--brand);
+            color: var(--brand);
         }
         
         .home-link svg {
