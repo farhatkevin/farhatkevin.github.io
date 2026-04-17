@@ -4,117 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Kevin Farhat - Research Engineer at Allen Institute for AI, working on language models, distributed training, and privacy-preserving AI.">
+    <meta name="description" content="Kevin Farhat is a research engineer at Ai2 working on language models, distributed training, and privacy-preserving AI.">
+    <meta name="theme-color" content="#f4efe7">
     <title>Kevin Farhat</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,500;6..72,700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <a href="#main" class="skip-link">Skip to main content</a>
-
-    <header class="topbar">
-        <div class="wrap topbar-inner">
-            <nav class="top-nav" aria-label="Main navigation">
+    <nav class="site-nav">
+        <div class="shell nav-inner">
+            <div class="nav-links">
                 <a href="#work">Work</a>
                 <a href="#publications">Publications</a>
-                <a href="#other">Other</a>
-            </nav>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+                <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 4.75a.75.75 0 0 1 .75-.75h0a.75.75 0 0 1 .75.75V6a.75.75 0 0 1-.75.75h0A.75.75 0 0 1 12 6V4.75ZM12 17.25a.75.75 0 0 1 .75-.75h0a.75.75 0 0 1 .75.75v1.25a.75.75 0 0 1-.75.75h0a.75.75 0 0 1-.75-.75v-1.25ZM5.47 6.53a.75.75 0 0 1 1.06 0l.88.88a.75.75 0 1 1-1.06 1.06l-.88-.88a.75.75 0 0 1 0-1.06Zm11.12 11.12a.75.75 0 0 1 1.06 0l.88.88a.75.75 0 1 1-1.06 1.06l-.88-.88a.75.75 0 0 1 0-1.06ZM4.75 12a.75.75 0 0 1 .75-.75H6.75a.75.75 0 0 1 0 1.5H5.5A.75.75 0 0 1 4.75 12Zm12.5 0a.75.75 0 0 1 .75-.75h1.25a.75.75 0 0 1 0 1.5H18a.75.75 0 0 1-.75-.75ZM6.53 18.53a.75.75 0 0 1 0-1.06l.88-.88a.75.75 0 1 1 1.06 1.06l-.88.88a.75.75 0 0 1-1.06 0ZM17.65 7.41a.75.75 0 0 1 0-1.06l.88-.88a.75.75 0 1 1 1.06 1.06l-.88.88a.75.75 0 0 1-1.06 0ZM12.75 8.25a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5Z"></path>
+                </svg>
+                <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12.11 3.43a.75.75 0 0 0-.83-.2 9.25 9.25 0 1 0 9.49 15.5.75.75 0 0 0-.2-.83 7.75 7.75 0 0 1-8.46-12.47Z"></path>
+                </svg>
+                <span class="visually-hidden">Toggle theme</span>
+            </button>
         </div>
-    </header>
+    </nav>
 
-    <main id="main" class="wrap">
-        <section class="hero">
-            <div class="hero-grid">
-                <div class="hero-main">
-                    <h1>Kevin Farhat</h1>
-                    <p class="hero-copy">
-                        I'm a research engineer at <a href="https://allenai.org" target="_blank" rel="noopener noreferrer">Ai2</a> on the OLMo team working on language models, distributed training, and privacy-preserving AI.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#publications" class="btn btn-primary">View Publications</a>
-                        <a href="#work" class="btn btn-ghost">What I'm Working On</a>
-                    </div>
+    <main class="shell page">
+        <header class="intro" id="about">
+            <div class="portrait-column">
+                <img src="profile_pic.png" alt="Portrait of Kevin Farhat" class="profile-photo" width="520" height="520" decoding="async">
+            </div>
+            <div class="intro-copy">
+                <p class="intro-kicker">Kevin Farhat</p>
+                <h1>Research engineer working on modular language models and privacy-preserving AI.</h1>
+                <p class="lede">
+                    I’m at <a href="https://allenai.org" target="_blank" rel="noopener noreferrer">Ai2</a> on the
+                    <a href="https://allenai.org/olmo" target="_blank" rel="noopener noreferrer">OLMo</a> team. Lately I’ve been
+                    interested in building systems that are technically ambitious but still grounded in the realities of sensitive data,
+                    collaboration across institutions, and actual deployment constraints.
+                </p>
+
+                <div class="inline-links" id="contact">
+                    <a href="https://github.com/farhatkevin" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://linkedin.com/in/kevin-farhat" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://twitter.com/notkevinfarhat" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a href="mailto:contact@kevinfarhat.com">Email</a>
                 </div>
-                <aside class="hero-card" aria-label="Profile details">
-                    <div class="profile-layout">
-                        <div class="profile-left">
-                            <img src="pfp.png" alt="Kevin Farhat profile photo" class="profile-photo">
-                            <p class="hero-name">Kevin Farhat</p>
-                            <p class="hero-role">Research Engineer at Ai2</p>
-                        </div>
-                        <div class="profile-right socials">
-                            <a href="https://twitter.com/notkevinfarhat" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
-                            <a href="https://github.com/farhatkevin" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
-                            <a href="https://linkedin.com/in/kevin-farhat" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
-                            <a href="mailto:contact@kevinfarhat.com" aria-label="Email">Email</a>
-                        </div>
+            </div>
+        </header>
+
+        <section class="content-section" id="work">
+            <div class="section-heading">
+                <p class="section-label">Work</p>
+                <h2>What I’m working on</h2>
+            </div>
+
+            <div class="text-block">
+                <p>
+                    I helped develop <a href="https://allenai.org/blog/flexolmo" target="_blank" rel="noopener noreferrer">FlexOLMo</a>,
+                    and now apply related ideas in federated learning setups to train on privacy-sensitive cancer data across institutions
+                    through the <a href="https://www.canceralliance.ai/" target="_blank" rel="noopener noreferrer">Cancer AI Alliance</a>.
+                </p>
+                <p>
+                    Previously, I worked at <a href="https://www.truemedia.org/" target="_blank" rel="noopener noreferrer">TrueMedia</a>
+                    with Oren Etzioni on deepfake detection systems intended to help safeguard the 2024 U.S. election.
+                </p>
+                <p>
+                    I earned my BS/MS in Computer Science at the University of Washington, where I worked with Akari Asai in the H2Lab
+                    under Hannaneh Hajishirzi.
+                </p>
+                <p class="quiet-note">
+                    Current interests: distributed LLM architectures, privacy-preserving training, and health AI.
+                </p>
+            </div>
+        </section>
+
+        <section class="content-section" id="publications">
+            <div class="section-heading">
+                <p class="section-label">Publications</p>
+                <h2>Selected papers</h2>
+            </div>
+
+            <div class="publication-list">
+                <article class="publication-item">
+                    <div class="publication-meta">
+                        <span>NeurIPS 2025</span>
+                        <span class="publication-badge">Spotlight</span>
                     </div>
-                </aside>
-            </div>
-        </section>
-
-        <section id="work" class="section">
-            <div class="section-head">
-                <h2>What I'm Working On</h2>
-            </div>
-            <div class="panel prose">
-                <p>
-                    I helped develop FlexOLMo, and now apply it in federated learning setups to train on privacy-sensitive cancer data across institutions as part of the Cancer AI Alliance (CAIA).
-                </p>
-                <p>
-                    Previously, I worked at TrueMedia with Oren Etzioni, developing deepfake detection systems to safeguard the 2024 U.S. election.
-                </p>
-                <p>
-                    I earned my BS/MS in Computer Science at the University of Washington, where I worked with Akari Asai in the H2Lab under Hannaneh Hajishirzi.
-                </p>
-                <p>
-                    <strong>Current focus:</strong> Distributed LLM architectures, privacy-preserving training, cancer and health AI.
-                </p>
-            </div>
-        </section>
-
-        <section id="publications" class="section">
-            <div class="section-head">
-                <h2>Publications</h2>
-            </div>
-            <div class="pub-list">
-                <article class="panel pub-item">
-                    <p class="pub-meta">NeurIPS, 2025 <span class="tag">Spotlight</span></p>
                     <h3>FlexOLMo: Open Language Models for Flexible Data Use</h3>
                     <p class="authors">Weijia Shi, Akshita Bhagia, <strong>Kevin Farhat</strong>, Niklas Muennighoff, Pete Walsh, Jacob Morrison, Dustin Schwenk, Shayne Longpre, Jake Poznanski, Allyson Ettinger, Daogao Liu, Margaret Li, Dirk Groeneveld, Mike Lewis, Wen-tau Yih, Luca Soldaini, Kyle Lo, Noah A. Smith, Luke Zettlemoyer, Pang Wei Koh, Hannaneh Hajishirzi, Ali Farhadi, Sewon Min</p>
-                    <a class="text-link" href="https://arxiv.org/abs/2507.07024" target="_blank" rel="noopener noreferrer">Read Paper →</a>
+                    <a href="https://arxiv.org/abs/2507.07024" class="publication-link" target="_blank" rel="noopener noreferrer">Read paper</a>
                 </article>
-                <article class="panel pub-item">
-                    <p class="pub-meta">ICML, 2024</p>
+
+                <article class="publication-item">
+                    <div class="publication-meta">
+                        <span>DMLR @ ICML 2024</span>
+                    </div>
                     <h3>The Tug-of-War Between Deepfake Generation and Detection</h3>
                     <p class="authors">Hannah Lee, Changyeon Lee, <strong>Kevin Farhat</strong>, Lin Qiu, Steve Geluso, Aerin Kim, Oren Etzioni</p>
-                    <a class="text-link" href="https://arxiv.org/abs/2407.06174" target="_blank" rel="noopener noreferrer">Read Paper →</a>
+                    <a href="https://arxiv.org/abs/2407.06174" class="publication-link" target="_blank" rel="noopener noreferrer">Read paper</a>
                 </article>
-                <article class="panel pub-item">
-                    <p class="pub-meta">ArXiv Preprint, 2025</p>
+
+                <article class="publication-item">
+                    <div class="publication-meta">
+                        <span>APAI @ CVPR 2026</span>
+                    </div>
                     <h3>Deepfake-Eval-2024: A Multi-Modal In-the-Wild Benchmark of Deepfakes Circulated in 2024</h3>
                     <p class="authors">Nuria Alina Chandra, Ryan Murtfeldt, Lin Qiu, Arnab Karmakar, Hannah Lee, Emmanuel Tanumihardja, <strong>Kevin Farhat</strong>, Ben Caffee, Sejin Paik, Changyeon Lee, Jongwook Choi, Aerin Kim, Oren Etzioni</p>
-                    <a class="text-link" href="https://arxiv.org/abs/2503.02857" target="_blank" rel="noopener noreferrer">Read Paper →</a>
+                    <a href="https://arxiv.org/abs/2503.02857" class="publication-link" target="_blank" rel="noopener noreferrer">Read paper</a>
                 </article>
             </div>
         </section>
 
-        <section id="other" class="section">
-            <div class="section-head">
-                <h2>Other</h2>
+        <section class="content-section">
+            <div class="section-heading">
+                <p class="section-label">Other</p>
+                <h2>A few non-work things</h2>
             </div>
-            <div class="panel prose">
+
+            <div class="text-block other-block">
                 <p>
-                    Outside of work, I enjoy playing and watching soccer, traveling, and carrot cake.
+                    Outside of work, I like playing and watching soccer, traveling, and carrot cake
+                    <span class="inline-emoji" aria-hidden="true">🥕</span>.
                 </p>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>© 2025 Kevin Farhat · Seattle, WA</p>
+        <div class="shell footer-inner">
+            <p>&copy; <span id="year"></span> Kevin Farhat</p>
+        </div>
     </footer>
+
+    <script>
+    (function () {
+      var root = document.documentElement;
+      var nav = document.querySelector('.site-nav');
+      var toggle = document.getElementById('theme-toggle');
+      var stored = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var year = document.getElementById('year');
+      var lastScrollY = window.scrollY || 0;
+
+      if (stored === 'dark' || (!stored && prefersDark)) {
+        root.setAttribute('data-theme', 'dark');
+      }
+
+      function syncThemeState() {
+        var isDark = root.getAttribute('data-theme') === 'dark';
+        toggle.classList.toggle('is-dark', isDark);
+        toggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+      }
+
+      toggle.addEventListener('click', function () {
+        var isDark = root.getAttribute('data-theme') === 'dark';
+        if (isDark) {
+          root.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'light');
+        } else {
+          root.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        }
+        syncThemeState();
+      });
+
+      if (year) {
+        year.textContent = new Date().getFullYear();
+      }
+
+      function syncNavState() {
+        if (!nav) {
+          return;
+        }
+        var currentScrollY = window.scrollY || 0;
+        var scrollingDown = currentScrollY > lastScrollY;
+        var pastThreshold = currentScrollY > 140;
+
+        nav.classList.toggle('is-hidden', pastThreshold && scrollingDown);
+        lastScrollY = currentScrollY;
+      }
+
+      window.addEventListener('scroll', syncNavState, { passive: true });
+
+      syncThemeState();
+      syncNavState();
+    })();
+    </script>
 </body>
 </html>
