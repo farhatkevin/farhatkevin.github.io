@@ -330,6 +330,19 @@ h1 {
   margin-bottom: 0;
 }
 
+.other-section {
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+}
+
+.other-section .section-heading h2 {
+  max-width: none;
+}
+
+.other-section .other-block {
+  padding-top: 0;
+}
+
 .inline-emoji {
   display: inline-block;
   margin-left: 0.18rem;
