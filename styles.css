@@ -85,6 +85,8 @@ a:hover {
   top: 0;
   z-index: 10;
   padding: 0.5rem 0 0;
+  display: flex;
+  justify-content: center;
   transition: transform 0.22s ease, opacity 0.22s ease;
   transform: translateY(0);
   opacity: 1;
@@ -100,8 +102,10 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: fit-content;
+  max-width: calc(100vw - 1rem);
   gap: 0.75rem;
-  padding: 0.4rem 0.8rem;
+  padding: 0.4rem 3rem 0.4rem 0.8rem;
   background: rgba(255, 252, 247, 0.72);
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -404,8 +408,10 @@ h1 {
   }
 
   .nav-inner {
+    width: min(calc(100vw - 1rem), fit-content);
     flex-wrap: wrap;
     justify-content: center;
+    padding-right: 0.8rem;
   }
 
   .theme-toggle {
