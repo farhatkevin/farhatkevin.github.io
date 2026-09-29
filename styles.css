@@ -15,9 +15,8 @@ a:hover { color: var(--accent); }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; border-radius: 2px; }
 ::selection { background: #d6e4dc; }
 .page { width: min(960px, calc(100% - 96px)); margin: 0 auto; }
-.site-header { display: flex; align-items: center; justify-content: space-between; padding: 30px 0; }
-.monogram { font: 400 14px/1.5 "DM Mono", monospace; text-decoration: none; }
-.monogram span, h1 > span { color: var(--accent); }
+.site-header { display: flex; align-items: center; justify-content: flex-end; padding: 30px 0; }
+h1 > span { color: var(--accent); }
 .site-header nav { display: flex; gap: 28px; font-size: 13px; }
 .site-header nav a { text-decoration: none; padding: 8px 0; }
 .intro { display: grid; grid-template-columns: 1.5fr 1fr; gap: 80px; align-items: end; padding: 65px 0 55px; border-bottom: 1px solid #87988c; }
