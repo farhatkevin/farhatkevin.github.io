@@ -1,194 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Kevin Farhat is a research engineer at Ai2 working on language models, distributed training, and privacy-preserving AI.">
-    <meta name="theme-color" content="#f4efe7">
-    <title>Kevin Farhat</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,500;6..72,700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kevin Farhat researches flexible language models at Ai2. Selected papers, work, and interests.">
+  <link rel="canonical" href="https://www.kevinfarhat.com/">
+  <meta name="theme-color" content="#f6f7f5">
+  <title>Kevin Farhat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Mono:wght@400&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="site-nav">
-        <div class="shell nav-inner">
-            <div class="nav-links">
-                <a href="#work">Now</a>
-                <a href="#publications">Papers</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
-                <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M12 4.75a.75.75 0 0 1 .75-.75h0a.75.75 0 0 1 .75.75V6a.75.75 0 0 1-.75.75h0A.75.75 0 0 1 12 6V4.75ZM12 17.25a.75.75 0 0 1 .75-.75h0a.75.75 0 0 1 .75.75v1.25a.75.75 0 0 1-.75.75h0a.75.75 0 0 1-.75-.75v-1.25ZM5.47 6.53a.75.75 0 0 1 1.06 0l.88.88a.75.75 0 1 1-1.06 1.06l-.88-.88a.75.75 0 0 1 0-1.06Zm11.12 11.12a.75.75 0 0 1 1.06 0l.88.88a.75.75 0 1 1-1.06 1.06l-.88-.88a.75.75 0 0 1 0-1.06ZM4.75 12a.75.75 0 0 1 .75-.75H6.75a.75.75 0 0 1 0 1.5H5.5A.75.75 0 0 1 4.75 12Zm12.5 0a.75.75 0 0 1 .75-.75h1.25a.75.75 0 0 1 0 1.5H18a.75.75 0 0 1-.75-.75ZM6.53 18.53a.75.75 0 0 1 0-1.06l.88-.88a.75.75 0 1 1 1.06 1.06l-.88.88a.75.75 0 0 1-1.06 0ZM17.65 7.41a.75.75 0 0 1 0-1.06l.88-.88a.75.75 0 1 1 1.06 1.06l-.88.88a.75.75 0 0 1-1.06 0ZM12.75 8.25a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5Z"></path>
-                </svg>
-                <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M12.11 3.43a.75.75 0 0 0-.83-.2 9.25 9.25 0 1 0 9.49 15.5.75.75 0 0 0-.2-.83 7.75 7.75 0 0 1-8.46-12.47Z"></path>
-                </svg>
-                <span class="visually-hidden">Toggle theme</span>
-            </button>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="site-header">
+      <a class="monogram" href="#main" aria-label="Kevin Farhat, back to top">KF<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#papers">Papers</a><a href="#contact">Contact</a></nav>
+    </header>
+    <main id="main">
+      <section class="intro" aria-labelledby="name">
+        <div>
+          <p class="eyebrow">A personal corner of the internet</p>
+          <h1 id="name">Kevin Farhat<span aria-hidden="true">.</span></h1>
+          <p class="intro-line">Researching flexible language models.</p>
+          <nav class="social-links" aria-label="Social profiles and email">
+            <a href="mailto:contact@kevinfarhat.com">Email <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/farhatkevin">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://linkedin.com/in/kevin-farhat">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="https://twitter.com/notkevinfarhat">Twitter <span aria-hidden="true">↗</span></a>
+          </nav>
         </div>
-    </nav>
+        <p class="intro-note">I’m on the <a href="https://allenai.org/olmo">OLMo</a> team at <a href="https://allenai.org">Ai2</a>, thinking about adaptive LLMs, continual learning, modular models, and agents.</p>
+      </section>
 
-    <main class="shell page">
-        <header class="intro" id="about">
-            <div class="portrait-column">
-                <img src="profile_pic.png" alt="Portrait of Kevin Farhat" class="profile-photo" width="520" height="520" decoding="async">
-            </div>
-            <div class="intro-copy">
-                <p class="intro-kicker">Kevin Farhat</p>
-                <h1>Researching flexible language models.</h1>
-                <p class="lede">
-                    I’m at <a href="https://allenai.org" target="_blank" rel="noopener noreferrer">Ai2</a> on the
-                    <a href="https://allenai.org/olmo" target="_blank" rel="noopener noreferrer">OLMo</a> team. I’m especially interested in
-                    systems that can adapt over time while still working under real deployment constraints.
-                </p>
+      <section class="section" id="work" aria-labelledby="work-title">
+        <h2 id="work-title"><span class="section-number" aria-hidden="true">01</span>Work &amp; background</h2>
+        <dl class="work-list">
+          <div class="work-entry">
+            <dt>Now</dt>
+            <dd><a href="https://allenai.org">Ai2</a><span class="entry-note">OLMo team · FlexOLMo &amp; federated learning</span></dd>
+          </div>
+          <div class="work-entry">
+            <dt>Previously</dt>
+            <dd><span>TrueMedia</span><span class="entry-note">Deepfake detection with Oren Etzioni</span></dd>
+          </div>
+          <div class="work-entry">
+            <dt>Education</dt>
+            <dd><span>University of Washington</span><span class="entry-note">BS/MS, Computer Science · H2Lab</span></dd>
+          </div>
+        </dl>
+      </section>
 
-                <div class="inline-links" id="contact">
-                    <a href="https://github.com/farhatkevin" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://linkedin.com/in/kevin-farhat" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a href="https://twitter.com/notkevinfarhat" target="_blank" rel="noopener noreferrer">Twitter</a>
-                    <a href="mailto:contact@kevinfarhat.com">Email</a>
-                </div>
-            </div>
-        </header>
+      <section class="section" id="papers" aria-labelledby="papers-title">
+        <h2 id="papers-title"><span class="section-number" aria-hidden="true">02</span>Selected papers</h2>
+        <ol class="paper-list">
+          <li><a class="paper-link" href="https://arxiv.org/abs/2507.07024">
+            <div><h3>FlexOLMo: Open Language Models for Flexible Data Use</h3><p>NeurIPS 2025 <span class="spotlight">Spotlight</span></p></div>
+            <span class="paper-arrow" aria-hidden="true">↗</span>
+          </a></li>
+          <li><a class="paper-link" href="https://arxiv.org/abs/2503.02857">
+            <div><h3>Deepfake-Eval-2024: A Multi-Modal In-the-Wild Benchmark of Deepfakes Circulated in 2024</h3><p>APAI @ CVPR 2026</p></div>
+            <span class="paper-arrow" aria-hidden="true">↗</span>
+          </a></li>
+          <li><a class="paper-link" href="https://arxiv.org/abs/2407.06174">
+            <div><h3>The Tug-of-War Between Deepfake Generation and Detection</h3><p>DMLR @ ICML 2024</p></div>
+            <span class="paper-arrow" aria-hidden="true">↗</span>
+          </a></li>
+        </ol>
+      </section>
 
-        <section class="content-section" id="work">
-            <div class="section-heading">
-                <h2>What I’m working on</h2>
-            </div>
-
-            <div class="text-block">
-                <p>
-                    I helped develop <a href="https://allenai.org/blog/flexolmo" target="_blank" rel="noopener noreferrer">FlexOLMo</a>,
-                    and now apply related ideas in federated learning setups to train on privacy-sensitive cancer data across institutions
-                    through the <a href="https://www.canceralliance.ai/" target="_blank" rel="noopener noreferrer">Cancer AI Alliance</a>.
-                </p>
-                <p>
-                    Previously, I worked at <a href="https://www.truemedia.org/" target="_blank" rel="noopener noreferrer">TrueMedia</a>
-                    with Oren Etzioni on deepfake detection systems intended to help safeguard the 2024 U.S. election.
-                </p>
-                <p>
-                    I earned my BS/MS in Computer Science at the University of Washington, where I worked with Akari Asai in the H2Lab
-                    under Hannaneh Hajishirzi.
-                </p>
-                <p class="quiet-note">
-                    Current interests: adaptive LLMs, continual learning, flexible and modular models, and agents.
-                </p>
-            </div>
-        </section>
-
-        <section class="content-section" id="publications">
-            <div class="section-heading">
-                <h2>Selected Papers</h2>
-            </div>
-
-            <div class="publication-list">
-                <article class="publication-item">
-                    <div class="publication-meta">
-                        <span>NeurIPS 2025</span>
-                        <span class="publication-badge">Spotlight</span>
-                    </div>
-                    <h3>FlexOLMo: Open Language Models for Flexible Data Use</h3>
-                    <p class="authors">Weijia Shi, Akshita Bhagia, <strong>Kevin Farhat</strong>, Niklas Muennighoff, Pete Walsh, Jacob Morrison, Dustin Schwenk, Shayne Longpre, Jake Poznanski, Allyson Ettinger, Daogao Liu, Margaret Li, Dirk Groeneveld, Mike Lewis, Wen-tau Yih, Luca Soldaini, Kyle Lo, Noah A. Smith, Luke Zettlemoyer, Pang Wei Koh, Hannaneh Hajishirzi, Ali Farhadi, Sewon Min</p>
-                    <a href="https://arxiv.org/abs/2507.07024" class="publication-link" target="_blank" rel="noopener noreferrer">Read paper</a>
-                </article>
-
-                <article class="publication-item">
-                    <div class="publication-meta">
-                        <span>DMLR @ ICML 2024</span>
-                    </div>
-                    <h3>The Tug-of-War Between Deepfake Generation and Detection</h3>
-                    <p class="authors">Hannah Lee, Changyeon Lee, <strong>Kevin Farhat</strong>, Lin Qiu, Steve Geluso, Aerin Kim, Oren Etzioni</p>
-                    <a href="https://arxiv.org/abs/2407.06174" class="publication-link" target="_blank" rel="noopener noreferrer">Read paper</a>
-                </article>
-
-                <article class="publication-item">
-                    <div class="publication-meta">
-                        <span>APAI @ CVPR 2026</span>
-                    </div>
-                    <h3>Deepfake-Eval-2024: A Multi-Modal In-the-Wild Benchmark of Deepfakes Circulated in 2024</h3>
-                    <p class="authors">Nuria Alina Chandra, Ryan Murtfeldt, Lin Qiu, Arnab Karmakar, Hannah Lee, Emmanuel Tanumihardja, <strong>Kevin Farhat</strong>, Ben Caffee, Sejin Paik, Changyeon Lee, Jongwook Choi, Aerin Kim, Oren Etzioni</p>
-                    <a href="https://arxiv.org/abs/2503.02857" class="publication-link" target="_blank" rel="noopener noreferrer">Read paper</a>
-                </article>
-            </div>
-        </section>
-
-        <section class="content-section other-section">
-            <div class="section-heading">
-                <h2>Outside Work</h2>
-            </div>
-
-            <div class="text-block other-block">
-                <p>
-                    Outside of work, I like playing and watching soccer, traveling, and carrot cake
-                    <span class="inline-emoji" aria-hidden="true">🥕</span>.
-                </p>
-            </div>
-        </section>
+      <section class="section outside" aria-labelledby="outside-title">
+        <h2 id="outside-title"><span class="section-number" aria-hidden="true">03</span>Outside work</h2>
+        <p>Playing and watching soccer, traveling, and carrot cake.</p>
+      </section>
     </main>
-
-    <footer class="site-footer">
-        <div class="shell footer-inner">
-            <p>&copy; <span id="year"></span> Kevin Farhat</p>
-        </div>
-    </footer>
-
-    <script>
-    (function () {
-      var root = document.documentElement;
-      var nav = document.querySelector('.site-nav');
-      var toggle = document.getElementById('theme-toggle');
-      var stored = localStorage.getItem('theme');
-      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      var year = document.getElementById('year');
-      var lastScrollY = window.scrollY || 0;
-
-      if (stored === 'dark' || (!stored && prefersDark)) {
-        root.setAttribute('data-theme', 'dark');
-      }
-
-      function syncThemeState() {
-        var isDark = root.getAttribute('data-theme') === 'dark';
-        toggle.classList.toggle('is-dark', isDark);
-        toggle.setAttribute('aria-pressed', isDark ? 'true' : 'false');
-      }
-
-      toggle.addEventListener('click', function () {
-        var isDark = root.getAttribute('data-theme') === 'dark';
-        if (isDark) {
-          root.removeAttribute('data-theme');
-          localStorage.setItem('theme', 'light');
-        } else {
-          root.setAttribute('data-theme', 'dark');
-          localStorage.setItem('theme', 'dark');
-        }
-        syncThemeState();
-      });
-
-      if (year) {
-        year.textContent = new Date().getFullYear();
-      }
-
-      function syncNavState() {
-        if (!nav) {
-          return;
-        }
-        var currentScrollY = window.scrollY || 0;
-        var scrollingDown = currentScrollY > lastScrollY;
-        var pastThreshold = currentScrollY > 140;
-
-        nav.classList.toggle('is-hidden', pastThreshold && scrollingDown);
-        lastScrollY = currentScrollY;
-      }
-
-      window.addEventListener('scroll', syncNavState, { passive: true });
-
-      syncThemeState();
-      syncNavState();
-    })();
-    </script>
+    <footer id="contact"><a href="mailto:contact@kevinfarhat.com">contact@kevinfarhat.com <span aria-hidden="true">↗</span></a><span>Kevin Farhat</span></footer>
+  </div>
 </body>
 </html>
