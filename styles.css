@@ -58,6 +58,11 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 25px
 footer a { text-decoration: none; color: var(--ink); }
 .skip-link { position: absolute; left: 20px; top: -100px; background: var(--paper); padding: 10px 16px; z-index: 2; }
 .skip-link:focus { top: 10px; }
+.error-page { min-height: 100vh; display: grid; place-items: center; padding: 28px; }
+.error-card { width: min(100%, 520px); }
+.error-card .section-label { font: 400 12px/1.6 "DM Mono", monospace; color: var(--muted); }
+.error-card h1 { font-size: 52px; margin: 18px 0 24px; }
+.error-card p + p { margin-top: 18px; }
 @media (max-width: 800px) {
   .page { width: calc(100% - 56px); }
   .intro { gap: 35px; grid-template-columns: 1.3fr 1fr; }
