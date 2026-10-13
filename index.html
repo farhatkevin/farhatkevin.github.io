@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Kevin Farhat researches flexible language models at Ai2. Selected papers, work, and interests.">
+  <meta name="description" content="Kevin Farhat researches language models at Ai2. Selected papers, work, and interests.">
   <link rel="canonical" href="https://www.kevinfarhat.com/">
   <meta name="theme-color" content="#f6f7f5">
   <title>Kevin Farhat</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Mono:wght@400&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260929-header">
+  <link rel="stylesheet" href="styles.css?v=20261013-previews">
+  <script src="site.js?v=20261013-previews" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -21,17 +22,29 @@
     <main id="main">
       <section class="intro" aria-labelledby="name">
         <div>
-          <h1 id="name">Kevin Farhat<span aria-hidden="true">.</span></h1>
-          <p class="intro-line">Researching flexible language models.</p>
+          <div class="name-line">
+            <h1 id="name">Kevin Farhat<span aria-hidden="true">.</span></h1>
+            <button class="modular-mark" type="button" aria-label="Rearrange the little modular mark" title="A little room to rearrange" hidden><span></span><span></span><span></span><span></span></button>
+          </div>
+          <p class="intro-line">Researching language models.</p>
           <nav class="social-links" aria-label="Social profiles and email">
             <a href="mailto:contact@kevinfarhat.com">Email <span aria-hidden="true">↗</span></a>
             <a href="https://github.com/farhatkevin">GitHub <span aria-hidden="true">↗</span></a>
             <a href="https://linkedin.com/in/kevin-farhat">LinkedIn <span aria-hidden="true">↗</span></a>
-            <a href="https://twitter.com/notkevinfarhat">Twitter <span aria-hidden="true">↗</span></a>
+            <a href="https://x.com/notkevinfarhat">Twitter <span aria-hidden="true">↗</span></a>
           </nav>
         </div>
         <p class="intro-note">I’m on the <a href="https://allenai.org/olmo">OLMo</a> team at <a href="https://allenai.org">Ai2</a>, thinking about adaptive LLMs, continual learning, modular models, and reasoning in base models.</p>
       </section>
+
+      <aside class="latest-note" aria-label="Latest research">
+        <div class="latest-label">Latest<time datetime="2026-10-05">Oct 2026</time></div>
+        <div>
+          <p>How a model’s opening words shape its reasoning.</p>
+          <p class="latest-description">Our new paper traces these cues back to the training data.</p>
+        </div>
+        <nav class="latest-links" aria-label="Latest paper resources"><a href="https://arxiv.org/abs/2610.06851">Paper ↗</a><a href="https://www.sophielwang.com/cues">Interactive writeup ↗</a><a href="https://github.com/sophicle/cues">Code ↗</a></nav>
+      </aside>
 
       <section class="section" id="work" aria-labelledby="work-title">
         <h2 id="work-title"><span class="section-number" aria-hidden="true">01</span>Work &amp; background</h2>
@@ -52,30 +65,84 @@
       </section>
 
       <section class="section" id="papers" aria-labelledby="papers-title">
-        <h2 id="papers-title"><span class="section-number" aria-hidden="true">02</span>Selected papers</h2>
+        <div class="papers-heading"><h2 id="papers-title"><span class="section-number" aria-hidden="true">02</span>Selected papers</h2><span class="preview-hint">Hover for a closer look</span></div>
         <ol class="paper-list">
-          <li><a class="paper-link" href="https://arxiv.org/abs/2610.06851">
-            <div><h3>Base Models Can Reason By Taking a Cue From Training Data</h3><p>arXiv 2026</p></div>
+          <li class="paper-row"><a class="paper-link" href="https://arxiv.org/abs/2610.06851">
+            <img class="paper-thumb" src="assets/papers/cues-figure.webp" alt="" width="120" height="68" loading="lazy">
+            <div class="paper-copy"><h3>Base Models Can Reason By Taking a Cue From Training Data</h3><p>arXiv 2026 <span class="new-label">New</span></p></div>
             <span class="paper-arrow" aria-hidden="true">↗</span>
-          </a></li>
-          <li><a class="paper-link" href="https://arxiv.org/abs/2507.07024">
-            <div><h3>FlexOLMo: Open Language Models for Flexible Data Use</h3><p>NeurIPS 2025 <span class="spotlight">Spotlight</span></p></div>
+          </a>
+            <details class="paper-preview">
+              <summary><span aria-hidden="true">Preview</span><span class="sr-only">Preview Base Models Can Reason By Taking a Cue From Training Data</span></summary>
+              <div class="preview-panel">
+                <p class="preview-source">arXiv:2610.06851 · 2026</p>
+                <img class="preview-figure" src="assets/papers/cues-figure.webp" alt="Original paper figure showing how Answer, Okay, and Chicken cues steer a model toward different responses." width="1200" height="391" loading="lazy">
+                <p class="preview-caption">Opening words can change what a model does.</p>
+                <p class="preview-description">Token cues can elicit reasoning already present in base models. We trace their effects to training data and change those effects through data edits.</p>
+                <p class="preview-authors">Sophie L. Wang, Amil Dravid, Rulin Shao, <strong>Kevin Farhat</strong>, Sewon Min, Alexei A. Efros</p>
+                <nav class="preview-links" aria-label="Base model reasoning paper resources"><a href="https://arxiv.org/abs/2610.06851">arXiv ↗</a><a href="https://arxiv.org/pdf/2610.06851">PDF ↗</a><a href="https://www.sophielwang.com/cues">Figures &amp; writeup ↗</a><a href="https://github.com/sophicle/cues">Code ↗</a></nav>
+              </div>
+            </details>
+          </li>
+          <li class="paper-row"><a class="paper-link" href="https://arxiv.org/abs/2507.07024">
+            <img class="paper-thumb" src="assets/papers/flexolmo-figure.webp" alt="" width="120" height="68" loading="lazy">
+            <div class="paper-copy"><h3>FlexOLMo: Open Language Models for Flexible Data Use</h3><p>NeurIPS 2025 <span class="spotlight">Spotlight</span></p></div>
             <span class="paper-arrow" aria-hidden="true">↗</span>
-          </a></li>
-          <li><a class="paper-link" href="https://arxiv.org/abs/2503.02857">
-            <div><h3>Deepfake-Eval-2024: A Multi-Modal In-the-Wild Benchmark of Deepfakes Circulated in 2024</h3><p>APAI @ CVPR 2026</p></div>
+          </a>
+            <details class="paper-preview">
+              <summary><span aria-hidden="true">Preview</span><span class="sr-only">Preview FlexOLMo</span></summary>
+              <div class="preview-panel">
+                <p class="preview-source">arXiv:2507.07024 · NeurIPS 2025 Spotlight</p>
+                <img class="preview-figure" src="assets/papers/flexolmo-figure.webp" alt="Original FlexOLMo figure showing separately trained experts combined into a mixture-of-experts model." width="1100" height="521" loading="lazy">
+                <p class="preview-caption">Train the pieces separately. Bring them together.</p>
+                <p class="preview-description">Independently trained expert modules can be combined into one language model, with flexible inclusion and exclusion of data sources at inference.</p>
+                <p class="preview-authors">Weijia Shi, Akshita Bhagia, <strong>Kevin Farhat</strong>, et al.</p>
+                <nav class="preview-links" aria-label="FlexOLMo resources"><a href="https://arxiv.org/abs/2507.07024">arXiv ↗</a><a href="https://arxiv.org/pdf/2507.07024">PDF ↗</a><a href="https://allenai.org/blog/flexolmo">Project writeup ↗</a><a href="https://github.com/allenai/FlexOlmo">Code ↗</a></nav>
+              </div>
+            </details>
+          </li>
+          <li class="paper-row"><a class="paper-link" href="https://arxiv.org/abs/2503.02857">
+            <img class="paper-thumb" src="assets/papers/deepfake-eval-figure1.webp" alt="" width="120" height="68" loading="lazy">
+            <div class="paper-copy"><h3>Deepfake-Eval-2024: A Multi-Modal In-the-Wild Benchmark of Deepfakes Circulated in 2024</h3><p>APAI @ CVPR 2026</p></div>
             <span class="paper-arrow" aria-hidden="true">↗</span>
-          </a></li>
-          <li><a class="paper-link" href="https://arxiv.org/abs/2407.06174">
-            <div><h3>The Tug-of-War Between Deepfake Generation and Detection</h3><p>DMLR @ ICML 2024</p></div>
+          </a>
+            <details class="paper-preview">
+              <summary><span aria-hidden="true">Preview</span><span class="sr-only">Preview Deepfake-Eval-2024</span></summary>
+              <div class="preview-panel">
+                <p class="preview-source">arXiv:2503.02857 · APAI @ CVPR 2026</p>
+                <img class="preview-figure" src="assets/papers/deepfake-eval-figure1.webp" alt="Figure 1 from Deepfake-Eval-2024: a collage of AI-generated and manipulated video, audio, and image examples collected in the wild." width="1000" height="858" loading="lazy">
+                <p class="preview-caption">Figure 1 · Examples of generated and manipulated media.</p>
+                <p class="preview-description">A benchmark of video, audio, and images collected in the wild, examining how well detection models hold up outside academic datasets.</p>
+                <p class="preview-authors">Nuria Alina Chandra et al. · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+                <nav class="preview-links" aria-label="Deepfake-Eval-2024 resources"><a href="https://arxiv.org/abs/2503.02857">arXiv ↗</a><a href="https://arxiv.org/pdf/2503.02857">PDF ↗</a></nav>
+              </div>
+            </details>
+          </li>
+          <li class="paper-row"><a class="paper-link" href="https://arxiv.org/abs/2407.06174">
+            <img class="paper-thumb paper-thumb-page" src="assets/papers/tug-of-war-page.webp" alt="" width="120" height="68" loading="lazy">
+            <div class="paper-copy"><h3>The Tug-of-War Between Deepfake Generation and Detection</h3><p>DMLR @ ICML 2024</p></div>
             <span class="paper-arrow" aria-hidden="true">↗</span>
-          </a></li>
+          </a>
+            <details class="paper-preview">
+              <summary><span aria-hidden="true">Preview</span><span class="sr-only">Preview The Tug-of-War Between Deepfake Generation and Detection</span></summary>
+              <div class="preview-panel preview-with-page">
+                <p class="preview-source">arXiv:2407.06174 · DMLR @ ICML 2024</p>
+                <div class="preview-page-layout"><img class="preview-page" src="assets/papers/tug-of-war-page.webp" alt="First page of The Tug-of-War Between Deepfake Generation and Detection." width="540" height="698" loading="lazy"><div>
+                  <p class="preview-caption">Generation advances. Detection tries to keep up.</p>
+                  <p class="preview-description">A survey of deepfake video generation, detection methods, and the datasets used to evaluate them.</p>
+                  <p class="preview-authors">Hannah Lee, Changyeon Lee, <strong>Kevin Farhat</strong>, et al.</p>
+                </div></div>
+                <nav class="preview-links" aria-label="Deepfake survey resources"><a href="https://arxiv.org/abs/2407.06174">arXiv ↗</a><a href="https://arxiv.org/pdf/2407.06174">PDF ↗</a></nav>
+              </div>
+            </details>
+          </li>
         </ol>
       </section>
 
       <section class="section outside" aria-labelledby="outside-title">
         <h2 id="outside-title"><span class="section-number" aria-hidden="true">03</span>Outside work</h2>
-        <p>Playing and watching soccer, traveling, and carrot cake.</p>
+        <div class="outside-copy"><p class="personal-line">Usually thinking about models. Occasionally thinking about soccer, travel, or carrot cake.</p></div>
+        <button class="soccer-ball" type="button" aria-label="Give the soccer ball a kick" title="Give it a kick" hidden><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="16" cy="16" r="14"/><path d="m16 9 7 5-3 8h-8l-3-8z" fill="currentColor"/><path d="m16 2 0 7M3 12l6 2m14 0 6-2M7 27l5-5m8 0 5 5"/></svg></button><span class="sr-only" role="status" id="soccer-status"></span>
       </section>
     </main>
     <footer id="contact"><a href="mailto:contact@kevinfarhat.com">contact@kevinfarhat.com <span aria-hidden="true">↗</span></a><span>Kevin Farhat</span></footer>
