@@ -1,5 +1,32 @@
 const hoverAvailable = window.matchMedia('(hover: hover) and (pointer: fine)');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+// Keep section jumps in the current document, including versioned previews.
+document.querySelectorAll('.site-header nav a[href^="#"]').forEach((link) => {
+  const target = document.getElementById(link.hash.slice(1));
+  if (!target) return;
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'section-link';
+  button.textContent = link.textContent;
+  button.setAttribute('aria-controls', target.id);
+  button.addEventListener('click', () => {
+    const nextHash = `#${target.id}`;
+    if (window.location.hash !== nextHash) {
+      history.pushState(null, '', `${window.location.pathname}${window.location.search}${nextHash}`);
+    }
+    target.tabIndex = -1;
+    target.focus({ preventScroll: true });
+    target.scrollIntoView({ behavior: reducedMotion.matches ? 'instant' : 'smooth', block: 'start' });
+  });
+  link.replaceWith(button);
+});
+
+window.addEventListener('popstate', () => {
+  const target = document.getElementById(window.location.hash.slice(1));
+  if (target) target.scrollIntoView({ behavior: 'instant', block: 'start' });
+});
+
 const previews = [...document.querySelectorAll('.paper-preview')];
 const states = new Map();
 
